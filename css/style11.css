@@ -1,0 +1,208 @@
+*{
+  margin:0;
+  padding:0;
+   
+
+}
+body{
+  overflow-x:auto;
+  display: flex;
+  flex-direction: column;
+  
+}
+.tabs_opt{
+  display: flex; 
+  margin: auto; 
+  justify-content: center;
+}
+
+#loading{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background:#fff 
+  url('https://media.tenor.com/images/12300eb4fdf142fe46fbce62e1b74c0e/tenor.gif')
+  no-repeat center;
+  z-index: 99999;
+}
+.contacts_box{
+  /* display: flex;
+  justify-content: center ;
+  align-items: center;
+  text-align: center;*/
+  width: 100%; 
+  margin: auto;
+}
+.contact li{
+list-style: none;
+float: left;
+margin: 0 2vw;
+}
+
+.hospital_tables{
+overflow-x:auto;
+max-height:90vh;
+}
+.statewise_table {
+  overflow-x:auto;
+  
+}
+
+.hospitals table{
+  
+  margin:auto;
+  /* border-collapse:collapse; */
+  min-width:342.2px;
+max-width:428px;
+font-size:1vw;
+
+  
+}
+.hospitals table td,th{
+padding:3vh;
+}
+.hospitals table th{
+background-color:#B1F6FE;
+}
+
+.hospitals table tr:hover{
+background:#E4F2F4;
+}
+
+footer{
+  margin-top: auto;
+ 
+  border-top: 0px solid black;
+  box-shadow: -1px -1px 10px rgb(128, 128, 128);
+  background-color: rgb(226, 224, 222);
+  
+ 
+ 
+
+
+  /* position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(187, 32, 32);
+  color: white;
+  text-align: center; */
+}
+
+
+
+
+.social_media{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1vw auto;
+}
+
+.social_media a{
+  margin: auto 1vw;
+}
+
+.link_live{
+  border-radius: 2.5vh;
+  background-color: #477479;
+ max-width: 50%;
+  
+
+}
+.link_live a{
+  font-size: 1.4vw;
+  animation: country 3s infinite;
+}
+.link_live p{
+  padding: 1vh;
+}
+@keyframes country {
+  0%{
+    color: orange;
+  }
+  50%{
+    color: white;
+  }
+  100%{
+    color: rgb(14, 243, 14);
+  }
+  
+
+
+}
+.nav-pills{
+  margin: auto;
+}
+
+.nashik_title{
+  font-size: 1.3vw;
+}
+@media only screen and (max-width: 600px){
+            .hosp_details .details{
+              font-size:4vw;
+              padding:0;
+            }
+            .statewise_table{
+            
+              overflow-x: scroll;
+            }
+            .card-body{
+              padding:4px;
+              width:100%;
+            }
+            .link_live{
+              max-width: 100%;
+            }
+            .link_live p a{
+              font-size: 4vw;
+              animation: country 3s infinite;
+            }
+
+          .hospitals .hospital_tables table{
+          margin:auto;
+            border-collapse:collapse;
+            min-width:342.2px;
+          max-width:428px;
+          font-size:3vw;
+          
+          
+
+            
+          }
+
+          .hospitals table td{
+          padding:0vh;
+          }
+
+
+
+          footer p{
+          font-size:4vw;
+          }
+
+          .nav-pills button{
+            width: 70vw;
+            margin: auto;
+          }
+          .nashik_title{
+            font-size: 5vw;
+          }
+
+          main{
+            margin: auto 3vw;
+          }
+          
+          .social_media{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 2vw auto;
+          }
+
+          .social_media a{
+            margin: auto 1.6vw;
+          }
+
+}
+

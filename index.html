@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid Home Page</title>
+    <link rel="shortcut icon" href="images/images.jpeg" type="image/x-icon">
+    <script type="text/javascript" defer src="js/datascript.js"></script>
+    <link rel="stylesheet" href="css/style11.css">
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+</head>
+
+<body onload="get_all_data()">
+<div id="loading"></div>
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light  pt-0 pb-0 shadow container-fluid">
+<a class="navbar-brand mb-3 font-weight-bolder " href="#" style="font-size:2rem;">Covid - 19 <small class="nashik_title" >(Help Initiative Nashik)</small></a>
+        <!-- <p class="text-center" style="margin-left: 31rem; font-size: x-large;">Be safe , Be Aware</p> -->
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          
+        </div>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto" style="font-size: larger;">
+            <li class="nav-item ">
+              <p><a class="nav-link h6  active font-weight-bold" href="index.html " data-bs-placement="bottom" title="Home Page">Home </a></p>
+            </li>
+                   
+            <li class="nav-item">
+             <p> <a class="nav-link  h6" href="covid_hospitals.html " data-bs-placement="bottom" title="List of covid hospitals in Nashik">Covid Hospitals Nashik</a></p>
+            </li>
+           
+            <!-- <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Treatment
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="covid_hospitals.html ">Covid-19 Hospitals</a>
+                <a class="dropdown-item" href="#">Inclusions</a>
+                <a class="dropdown-item" href="#">Excluded</a>
+              </div>
+            </div> -->
+          </ul>
+          <!-- <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form> -->
+        </div>    
+      </nav>
+
+    </div>
+    <div class="marquee_div">
+          <marquee class="text-center w-100 alert alert-success container-fluid" behaviour="slide" direction="left-right" ><div class=" ">***<b>This website is for making everyone aware about the Covid-19 outbreak.</b>***</div></marquee>
+
+    </div>
+
+<main>
+        <div class="contacts_box mt-0 container text-center text-capitalize">
+
+        <div class="row">
+          <div class="col-md-4">
+              <p class="h6 bg-dark p-2 rounded-3 text-white">Helpline for Covid19 : 9607432233</p>
+          </div>
+          <div class="col-md-4">
+              <p class="h6 bg-dark p-2 rounded-3 text-white"> Covid19 Information center : 0253-2317292</p>
+            </div>
+            <div class="col-md-4">
+            <p class="h6 bg-dark p-2 rounded-3 text-white"> Complaints on billing : 8805520395</p>
+            </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3">
+
+          </div>
+          <div class="col-md-3">
+                <p class="h6 bg-dark p-2 rounded-3 text-white"> NMC Helpline : 7030300300</p>
+            </div>
+            <div class="col-md-3">
+                <p class="h6 bg-dark p-2 rounded-3 text-white"> CBRS Cell : 9607623366</p>
+            </div>
+            <div class="col-md-3">
+            
+            </div>
+        </div>
+
+        
+
+        </div>
+
+
+        <center><p class="h4 alert alert-danger mt-3 text-capitalize" style="width: 20rem;">Stay safe,Stay home</p>
+        </center>
+        <center>
+
+
+        </center>
+
+        <p class="text-center" style="color:red"><b style="text-decoration:underline">Note :-</b>Click on the buttons below to get information (माहिती मिळविण्यासाठी खालील बटणावर क्लिक करा)</p>
+
+
+        <ul class="nav nav-pills tabs_opt h6  mb-3" id="pills-tab" role="tablist" >
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link  active bg-info" id="covid_hospitals-tab" data-bs-toggle="pill" data-bs-target="#covid_hospitals" type="button" role="tab" aria-controls="covid_hospitals" aria-selected="true"><b>LIST OF COVID HOPITALS <small>(Nashik) WITH LOCATION </small> <br> (स्थानासह नासिकमधील कोविड हॉस्पिटलची यादी)</b></button>
+                </li>
+                <!-- <li class="nav-item" role="presentation">
+                  <button class="nav-link bg-danger" id="imp_contacts-tab" data-bs-toggle="pill" data-bs-target="#imp_contacts" type="button" role="tab" aria-controls="imp_contacts" aria-selected="false"><b>IMPORTANT CONTACT DETAILS <br> (महत्त्वाचा संपर्क)</b></button>
+                </li> -->
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link bg-warning" id="covid_details-tab" data-bs-toggle="pill" data-bs-target="#covid_details" type="button" role="tab" aria-controls="covid_details" aria-selected="false"><b>What is CoronaVirus 2019? <br>(कोरोनाव्हायरस काय आहे 2019?)</b></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link bg-primary " id="symp-tab" data-bs-toggle="pill" data-bs-target="#symp" type="button" role="tab" aria-controls="symp" aria-selected="false"><b>SYMPTOMS AND PRECAUTIONS <br> (लक्षणे आणि खबरदारी)</b></button>
+                  </li>
+              </ul>
+
+
+
+
+              
+              <div class="tab-content container " id="pills-tabContent" >
+                        <div class="tab-pane fade show active" id="covid_hospitals" role="tabpanel" aria-labelledby="covid_hospitals-tab">
+
+                                <!-- <div class="hosp_details">
+                              <h3 class="card-title text-center" style="text-decoration:underline">Covid-19 Hospitals In Nashik City</h3>
+                                    <div class="card container w-50 text-center  details" style="border-color:red">
+                                  
+                                  <div class="card-body">
+                                    
+                                    <p class="card-text">
+                                    <ol>
+                                      <li><a href="#DCHC_collapse" data-bs-toggle="collapse" data-bs-target="#DCHC_collapse"><b >DCHC</b> - Dedicated COVID Health Center</a></li>
+                                      <li><a href="#CCC_collapse" data-bs-toggle="collapse" data-bs-target="#CCC_collapse"><b>CCC</b> - COVID Care Center Status</a></li>
+                                      <li><a href="#DCH_collapse" data-bs-toggle="collapse" data-bs-target="#DCH_collapse"><b>DCH</b> -Dedicated COVID Hospital Status</a></li>
+                                    </ol>
+                                    </p>
+                                  
+                                  </div>
+                                </div>
+                              </div> -->
+
+                        <div class="hospitals">
+          <h5 class="text-center" style="text-transform:capitalize">list of covid hospitals in Nashik <small> with location </small> (स्थानासह नासिकमधील कोविड हॉस्पिटलची यादी)</h5>
+                          <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#DCHC_collapse" aria-expanded="false" aria-controls="DCHC_collapse">
+                                        <b >DCHC</b> - Dedicated COVID Health Center
+                                    </button>
+                                  </h2>
+                                  <div id="DCHC_collapse" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <!-- DCHC -->
+                                                                                                                                
+                                        <div class="DCHC_hospitals" id="dchc_table_data" style="display:none;">
+                                            <h3 class='text-center m-3'>DCHC </h3>
+                                            <div class="hospital_tables">
+                                            <table  border="1" class="table" >
+                                            
+                                            <thead   >
+                                              <th>Sr.no</th>
+                                              <th>Hospital Name</th> 
+                                              <th>Hospital Landline</th>
+                                              <th>Hospital Contact</th>
+                                              <th>Address</th>
+                                              <th>Dr. Name</th>           
+                                              
+                                            
+                                            </thead>
+                                            
+
+                                            <tbody id="dchc_body">
+
+                                            </tbody>
+                                          </table>
+                                          
+                                            </div>
+
+
+                                          </div>
+
+                                        <!-- DCHC end -->
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="flush-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#CCC_collapse" aria-expanded="false" aria-controls="CCC_collapse">
+                                        <b>CCC</b> - COVID Care Center 
+                                    </button>
+                                  </h2>
+                                  <div id="CCC_collapse" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        
+                                        <!-- CCC -->
+
+                                                                                                                                          
+                                        <div class="CCC_hospitals" id="ccc_table_data" style="display:none;">
+                                            <h3 class='text-center m-3'>CCC </h3>
+                                            <div class="hospital_tables">
+                                            <table  border='1' class="table"  >
+                                              <thead >
+                                              <th>Sr.no</th>
+                                                <th>Hospital Name</th> 
+                                                <th>Hospital Landline</th>
+                                                <th>Hospital Contact</th>
+                                                <th>Address</th>
+                                                <th>Dr. Name</th>           
+                                                
+                                              </thead>
+
+                                              <tbody id="ccc_body">
+
+                                              </tbody>
+                                            </table>
+                                            
+                                            </div>
+
+                                            </div>
+
+
+                                          <!-- CCC End -->
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="flush-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#DCH_collapse" aria-expanded="false" aria-controls="DCH_collapse">
+                                        <b>DCH</b> -Dedicated COVID Hospital 
+                                    </button>
+                                  </h2>
+                                  <div id="DCH_collapse" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <!-- DCH -->
+
+                                        <div class="DCH_hospitals" id="dch_table_data" style="display:none;" >
+                                            <h3 class='text-center m-3'>DCH </h3>
+                                            <div class="hospital_tables">
+                                            <table  border='1' class="table" >
+                                              <thead >
+                                              <th>Sr.no</th>
+                                                <th>Hospital Name</th> 
+                                                <th>Hospital Landline</th>
+                                                <th>Hospital Contact</th>
+                                                <th>Address</th>
+                                                <th>Dr. Name</th>           
+                                                
+                                              </thead>
+
+                                              <tbody id="dch_body">
+
+                                              </tbody>
+                                            </table>
+                                            </div>
+                                            
+                                            </div>
+
+
+                                          <!-- DCH ends -->
+                                    </div>
+                                  </div>
+                                </div>
+                          </div>
+
+
+                        </div>
+
+              </div>
+              
+        <!--       
+              <div class="tab-pane fade" id="imp_contacts" role="tabpanel" aria-labelledby="imp_contacts-tab">
+                  
+                <ul class="navbar-nav   text-center" style="font-size: larger;">
+                    <li class="nav-item ">
+                      <p class="h6 bg-dark p-2 rounded-3 text-white">Helpline for Covid19 : 9607432233</p>
+                    </li>
+                    <li class="nav-item">
+                    <p class="h6 bg-dark p-2 rounded-3 text-white"> Covid19 Information center : 0253-2317292</p>
+                    </li>
+
+                    <li class="nav-item">
+                    <p class="h6 bg-dark p-2 rounded-3 text-white"> Complaints on billing : 8805520395</p>
+                    </li class="h6">
+                    <li class="nav-item">
+                    <p class="h6 bg-dark p-2 rounded-3 text-white"> NMC Helpline : 7030300300</p>
+                    </li>
+                    <li class="nav-item">
+                      <p class="h6 bg-dark p-2 rounded-3 text-white"> CBRS Cell : 9607623366</p>
+                    </li>
+                  </ul>
+
+              </div>
+                
+                -->
+                
+              <div class="tab-pane fade" id="covid_details" role="tabpanel" aria-labelledby="covid_details-tab">
+              <h5 class="text-center">What is CoronaVirus 2019? (कोरोनाव्हायरस काय आहे 2019?)</h5>
+                          <p>Coronavirus disease 2019 (COVID-19), also known as the coronavirus or COVID, is a contagious disease caused by 
+                          severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2).
+                          The first known case was identified in Wuhan, China, in December 2019.The disease has since spread worldwide, 
+                          leading to an ongoing pandemic. <br><br> In early 2020, a new virus began generating headlines all 
+                          over the world because of the unprecedented speed of its transmission. <br><br>
+                        <b>Case definition</b> 
+                          <ol>
+                            <li style="text-decoration: underline;">Suspect Case-</li>
+                              <ol type="A">
+                                <li>A patient with acute respiratory illness (fever and at least one sign/symptom of respiratory disease, 
+                                  e.g., cough, shortness of breath), AND a history of travel to or residence in a 
+                                  location reporting community transmission of COVID-19 disease during the 14 days 
+                                  prior to symptom onset
+                                </li>
+                                  <span>OR</span>
+                                <li>
+                                  A patient with any acute respiratory illness 
+                                  AND having been in contact with a confirmed 
+                                  or probable COVID-19 case in the last 14 days prior to symptom onset
+                                </li>
+                                <span>OR</span>
+                                <li>
+                                  A patient with severe acute respiratory illness (fever and at 
+                                  least one sign/symptom of respiratory disease, e.g., 
+                                  cough, shortness of breath; AND requiring hospitalization) 
+                                  AND in the absence of an alternative diagnosis that fully explains the clinical presentation.
+                                </li>
+                              </ol>
+                            <li style="text-decoration: underline;">Probable Case –</li>
+                              <ol type="A">
+                                <li>
+                                  A suspect case for whom testing for the COVID-19 virus is inconclusive.
+                                </li>
+                                <span>OR</span>
+                                <li>A suspect case for whom testing could not be performed for any reason.</li>
+                              </ol>
+                            <li style="text-decoration: underline;">Confirmed Case-</li>
+                            <p>A person with laboratory confirmation of COVID-19 infection, irrespective of clinical signs and symptoms.</p>
+                          </ol>
+                      </p>
+              
+              </div>
+                
+              
+              <div class="tab-pane fade" id="symp" role="tabpanel" aria-labelledby="symp-tab">
+                  
+                      <!-- symptoms start -->
+                      <div class="symptoms container mb-2" >
+                        <p class="h3 text-center">Symptoms of Covid</p>
+                        <p class="text-danger">COVID-19 patients reporting to various Covid treatment facilities have reported the following signs and symptoms: </p>
+                        <div class="list_symptoms">
+                          <ul>
+                            <li>Fever </li>
+                            <li>Cough </li>
+                            <li>Fatigue </li>
+                            <li>Shortness of breath </li>
+                            <li>Expectoration </li>
+                            <li>Myalgia </li>
+                            <li>Rhinorrhea,sore throat, diarrhea</li>
+                            <li>Loss of smell (anosmia) or loss of taste (ageusia) preceding the onset of respiratory symptoms has also been reported</li>
+                          
+                          </ul>
+                        </div>
+                        <p class="text-danger">Older people and immune-suppressed patients in particular may present with atypical symptoms such as</p>
+                        <div class="list_symptoms">
+                          <ul>
+                            <li>fatigue</li>
+                            <li>reduced alertness</li>
+                            <li>reduced mobility</li>
+                            <li>diarrhoea</li>
+                            <li>loss of appetite</li>
+                            <li>delirium</li>
+                            <li>absence of fever</li>
+                          </ul>
+                        </div>
+                        <a href="symptoms.html  " class="h5">For more information of symptoms click here...(लक्षणांच्या अधिक माहितीसाठी येथे क्लिक करा ...)</a>
+                      </div>
+
+                  <!-- symptoms end -->
+                <hr>
+                            <!-- Precautions Start -->
+
+
+
+                            <div class="basic_precautions">
+                              <p class="h3">Basic precautions that everyone should take are as follows :</p>
+
+                              <table class="table container-fluid mt-5 table-bordered" border="2">
+                                <thead class="text-center bg-light  shadow">
+                                  <th >Sr. no.</th>
+                                  <th>Precaution</th>
+                                  <th>Reason  (WHY ?)</th>
+                                </thead>
+
+                                <tbody >
+                                  <tr>
+                                    <td>1.</td>
+                                  <td>Regularly and thoroughly clean your hands with an <b>alcohol-based</b> hand rub or wash them with soap and water.</td>
+                                  <td>Washing your hands with soap and water or using <b>alcohol-based</b> hand rub kills viruses that may be on your hands.</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>2.</td>
+                                    <td>Keep <b>atleast</b> 1 metre (3 feet) distance between yourself and others.</td>
+                                    <td>When someone <b>coughs, sneezes, or speaks</b> they spray small liquid droplets from their nose or mouth which may contain virus. If you are too close, you can breathe in the droplets, including the COVID-19 virus if the person has the disease.</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>3.</td>
+                                    <td><b>Avoid</b> going to crowded places.</td>
+                                    <td>It becomes <b>difficult</b> to maintain safe distance of atleast 1 metre (3 feet) in crowded place.You can come in contact with any person havind the disease.</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>4.</td>
+                                    <td>Avoid touching eyes, nose and mouth i.e Avoid <b>touching your face</b>.</td>
+                                    <td>Hands touch various surface which may contain the virus and on touching the hands to face can <b>infect you easily</b>.</td>
+                                  </tr>
+                                  
+                                  <tr>
+                                    <td>5.</td>
+                                    <td>Make sure you, and the people around you, follow good <b>respiratory hygiene</b>. This means covering your mouth and nose with your bent elbow or tissue when you cough or sneeze. Then dispose of the used tissue immediately and wash your hands.</td>
+                                    <td>Droplets spread viruses.And maintaining good <b>respiratory hygiene</b> can keep the people around you safe from viruses. <br><br><p class="text-danger font-weight-bold">Note : Use tissue or handkerchief if possible</p> </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>6.</td>
+                                    <td>
+                                      <ul>
+                                        <li>Stay home and <b><a href="#self_iso">self-isolate</a></b> even with minor symptoms such as cough, headache, mild fever, until you recover.</li>
+                                        <li>Have someone bring you supplies.</li>
+                                        <li>If you need to leave the house wear mask , hand gloves and take complete measure for avoiding infecting others.</li>
+                                      </ul>
+                                    </td>
+
+                                    <td> Avoiding contact with others <b>will protect</b> them from possible COVID-19 and other viruses.</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>7.</td>
+                                    <td>If you have a <b>fever, cough and difficulty breathing</b>, seek medical attention, but call by telephone in advance if possible and follow the directions of your local health authority.</td>
+                                    <td>
+                                      <ul>
+                                        <li>National and local authorities will have the most up to date information on the situation in your area.</li>
+                                        <li>Calling in advance will allow your health care provider to quickly direct you to the right health facility.</li>
+                                        <li>his will also protect you and help prevent spread of viruses and other infections.</li>
+                                      </ul>
+                                    </td>
+                                    <tr>
+                                      <td>8.</td>
+                                      <td>Keep up to date on the latest information from trusted sources, such as WHO or your local and national health authorities.</td>
+                                      <td>Local and national authorities are best placed to advise on what people in your area should be doing to protect themselves.</td>
+                                    </tr>
+                                                  
+                                  
+
+                                
+                                </tbody>
+
+                              </table>
+                              <p class="h2 " id="self_iso">Self-isolation</p>
+                              <hr>
+                              <p  class="text-center">Self-isolation is about protecting others and slowing down the spread of COVID-19. <br> It is very important that anyone who has the virus, or might have been exposed to it, limits the number of people they come into <br> contact with for 14 days. This is the most effective way of preventing the coronavirus from spreading.</p>
+                            </div>
+
+
+                            <!-- Precautions End -->
+
+
+
+                </div>
+              </div>
+
+
+
+          
+
+              <div class="link_live   container-fluid">
+            <p class="text-center font-italic font-monospace font-weight-bolder mt-2 h4 "><a href="livedata.html  " data-bs-toggle="tooltip" data-bs-placement="bottom" title="Live data of India"  style="text-decoration: none;">Click here to see the live data of India</a></p>
+
+        </div>
+
+
+        <div class="aim_div" style="margin-bottom: 5vh;">
+            <div class="h3 text-center mt-4 text-primary" >Aim of this Website</div>
+            <div class="aim_body text-center" >
+              <p>This website is for providing information and this is not for making any kind of profit. <br> If you see that any information provided in this website is incorrect feel free to contact us.
+            <br>We are here only to make people aware and to help them. <br><br>
+            <b>All the data in this website is collected from official websites related to Covid-19.</b> </p>
+            </div>
+        </div>
+
+
+</main>
+
+<footer class="w-100 container-fluid text-center  ">
+      <p class="mb-0 text-decoration-underline font-italic font-weight-bold">Give Your feedback On or For Help Click On</p>
+      <div class="social_media">
+        <a href="https://www.instagram.com/askncapture/" target="_blank"> <img src="images/insta.png "  style="height:35px "></a>
+        <a href="https://www.facebook.com/aniket.kote.353" target="_blank"><img src=" images/fb.png "  style="height:32px; "></a>
+        <a href="https://twitter.com/AniketKote2" target="_blank"> <img src="images/twitter.png " style="height:33px " ></a>
+        <a href="https://wa.me/qr/PJPWDHSOITPYJ1" target="_blank"> <img src="images/whatsapp.png "  style="height:33px "></a>
+        <a href="https://mail.google.com/mail/u/2/#inbox?compose=CllgCJfnbcsfkvwbwFBBfWhJnJcJcVnBCwtpBBgVdtSjjsfJSNsPsRmMQfMsBRvTvhnGQwckLdV" target="_blank"><img src="images/gmail.png "  style="height:35px "></a>
+
+      </div>
+        
+      <p class="font-weight-bolder">Developed and Designed by <br> Aniket Kote and Sagar Chaudhari
+</p>
+</footer>
+   
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

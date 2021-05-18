@@ -1,0 +1,17 @@
+[
+{"type":"header","version":"5.0.3","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"covid_hospitals"},
+{"type":"table","name":"ccc","database":"covid_hospitals","data":
+[
+{"sr_no":"1","name":"Bytco CCC","dr_name":"Dr. Jitendra Dhanashwar","address":"Fire Quarter, DurgaGarden,Nashik-Road","google_location":"","hospital_contact":"9890058645","hospital_landline":"9607735497","type_hospital":"CCC(Govt)"},
+{"sr_no":"2","name":"Crompton Hall CCC","dr_name":"","address":"Cultural center in Nashik, Maharashtra","google_location":"https:\/\/goo.gl\/maps\/3TCC2nLVgVRNGjgH6","hospital_contact":"9607343848 \/ 9422746256","hospital_landline":"","type_hospital":"CCC(Govt)"},
+{"sr_no":"3","name":"Fire Quaters Nashik Road","dr_name":"","address":"Behind NMC Devisional Office","google_location":"","hospital_contact":"","hospital_landline":"","type_hospital":"CCC"},
+{"sr_no":"4","name":"Meena tai Thakre CCC","dr_name":"Mr Bhandhari","address":"Hirawadi Rd, Mahalaxmi Nagar, Nashik, Maharashtra 422003","google_location":"https:\/\/goo.gl\/maps\/uujvHAnNyEx2CEgN6","hospital_contact":"9607343848 \/ 9422746256","hospital_landline":"","type_hospital":"CCC(Govt)"},
+{"sr_no":"5","name":"Meri CCC","dr_name":"Dr. vishawm Baste","address":" Panjabrao Deshmukh Hostel, Meri, Panchavati","google_location":"https:\/\/goo.gl\/maps\/vvsKpzRVjmp8Zyc96","hospital_contact":"9260400427","hospital_landline":"0253-2533253","type_hospital":"CCC"},
+{"sr_no":"6","name":"Nashik City Police पोलिसरुग्णांसाठी","dr_name":" Dr Prashant Deore","address":"City Police Office West","google_location":"","hospital_contact":"9921437000,7350123403","hospital_landline":" 0253 - 2322117","type_hospital":"CCC"},
+{"sr_no":"7","name":"SamajKalyan Covid Care Center","dr_name":"Dr.Kalpesh","address":"Samajik Nyay Sankul, Nashik-Pune Road, near Nasardi Bridge, Nashik, Maharashtra 422011","google_location":"https:\/\/goo.gl\/maps\/31PEUca7t3DhY8qQ7","hospital_contact":"9970293070","hospital_landline":"","type_hospital":"CCC"},
+{"sr_no":"8","name":"Sambhaji Stadium CCC","dr_name":"","address":"Sambhaji Stadium Road, Nashik, Maharashtra, 422009","google_location":"https:\/\/goo.gl\/maps\/tcAtMF6mDYTE9wrw8","hospital_contact":"9607343848 \/ 9422746256","hospital_landline":"","type_hospital":"CCC(Govt)"},
+{"sr_no":"9","name":"Thakkar dome ccc","dr_name":"Dr.R.M.Bhandari","address":"Lavate Nagar Trambak Road Nashik","google_location":"https:\/\/goo.gl\/maps\/yUBGj7Zeu7g1ZESR6","hospital_contact":"9607343848 \/ 9422746256","hospital_landline":"","type_hospital":"CCC"}
+]
+}
+]

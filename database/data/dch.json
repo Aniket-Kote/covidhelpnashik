@@ -1,0 +1,16 @@
+[
+{"type":"header","version":"5.0.3","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"covid_hospitals"},
+{"type":"table","name":"dch","database":"covid_hospitals","data":
+[
+{"sr_no":"1","name":"Apollo","dr_name":"Shri. Prem Chawla","address":"Apolo Hospital Swami Narayan Nagar, Aurangabad Road Panchavti Nashik","google_location":"https:\/\/g.page\/ApolloHospitalsNasik?share","hospital_contact":"8530924466","hospital_landline":"0253 - 2628500,2510250, 360,450, 550, 750","type_hospital":"DCH"},
+{"sr_no":"2","name":"Ashoka","dr_name":"Dr. Sagar Palave","address":"Sahrudaya Health care Pvt. Ltd., Ashoka Medic over Hospital, 113\/2, A Plot No. 2,I.T. Park, Vadala,Nashik-9","google_location":"https:\/\/g.page\/ashoka-medicover-hospitals-nasik?share","hospital_contact":"9890807029 \/ 8408878398","hospital_landline":"0253-6660000","type_hospital":"DCH"},
+{"sr_no":"3","name":"Civil Hospital","dr_name":"Dr Nikhil Saindane","address":"Opposite Golf Club Trimbak Road Nashik","google_location":"https:\/\/goo.gl\/maps\/3Fu6ZbaT3pe5nF7C8","hospital_contact":"9975650722","hospital_landline":"2572038, 2576106","type_hospital":"DCH(Govt)"},
+{"sr_no":"4","name":"MVP","dr_name":"Dr Alaamle","address":"Vasantdada Nagar, Adgaon, NASHIK - 422003, Maharash","google_location":"https:\/\/goo.gl\/maps\/dW7ZN6geBNaEYzWY9","hospital_contact":"9371675700","hospital_landline":"0252 - 2220500","type_hospital":"DCH(Govt)"},
+{"sr_no":"5","name":"New Bytco DCH","dr_name":"Dr.Dhaneshwar","address":"Fire Quarter, DurgaGarden,Nashik-Road.","google_location":"https:\/\/goo.gl\/maps\/cpXYJ2V6U67aXAxX9","hospital_contact":"9890058645","hospital_landline":"","type_hospital":"DCH"},
+{"sr_no":"6","name":"Sahyadri","dr_name":"Shri. Khaushik Makhwana","address":"Sayadri Spacality Hospital, WadalaRoad, nashik","google_location":"https:\/\/goo.gl\/maps\/Hghd5h6NyzsZH8DB8","hospital_contact":"7030077869","hospital_landline":"0253-6691666","type_hospital":"DCH"},
+{"sr_no":"7","name":"Wockhardt","dr_name":"Dr. Pravin Wankhade","address":"Wockhard Hospital, Wani Hauose Mumbai agra Road","google_location":"https:\/\/goo.gl\/maps\/ZQ6SbHC9tyHyWp5m8","hospital_contact":"9130054645","hospital_landline":"0253-6624444, 6624122","type_hospital":"DCH"},
+{"sr_no":"8","name":"Zakir Hussain","dr_name":"Dr.Badade","address":"Kathada, Nashik","google_location":"https:\/\/goo.gl\/maps\/feFZhkmrghVdPLVS7","hospital_contact":"9607821133 \/ 9923399283","hospital_landline":"0253 - 2590049","type_hospital":"DCH"}
+]
+}
+]

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live data</title>
+    <link rel="shortcut icon" href="images/images.jpeg" type="image/x-icon">
+  <script type="text/javascript" defer  src="js/datascript.js"></script>
+
+        <!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style11.css">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+</head>
+<body onload="fetch_data()">
+<!-- <button class="btn btn-primary ml-5 mr-auto mt-5" id="live_databtn">Click to get live data</button> -->
+<div id="loading"></div>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light  pt-0 pb-0 shadow container-fluid">
+<a class="navbar-brand mb-3 font-weight-bolder " href="#" style="font-size:2rem;">Covid - 19 <small class="font-monospace nashik_title" >(Help Initiative Nashik)</small></a>
+        <!-- <p class="text-center" style="margin-left: 31rem; font-size: x-large;">Be safe , Be Aware</p> -->
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          
+        </div>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto" style="font-size: larger;">
+            <li class="nav-item ">
+              <p><a class="nav-link h6   " href="index.html" data-bs-placement="bottom" title="Home Page">Home </a></p>
+            </li>
+                   
+            <li class="nav-item">
+             <p> <a class="nav-link h6" href="covid_hospitals.html" data-bs-placement="bottom" title="List of covid hospitals in Nashik">Covid Hospitals Nashik</a></p>
+            </li>
+           
+            <!-- <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Treatment
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="covid_hospitals.html">Covid-19 Hospitals</a>
+                <a class="dropdown-item" href="#">Inclusions</a>
+                <a class="dropdown-item" href="#">Excluded</a>
+              </div>
+            </div> -->
+          </ul>
+          <!-- <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form> -->
+        </div>    
+      </nav>
+
+    </div>
+    <div class="marquee_div">
+          <marquee class="text-center w-100 alert alert-success container-fluid" behaviour="slide" direction="left-right" ><div class=" ">***<b>This website is for making everyone aware about the Covid-19 outbreak.</b>***</div></marquee>
+
+    </div>
+
+<main>
+     
+<div class="contacts_box container text-center mt-0 text-capitalize">
+
+<div class="row">
+  <div class="col-md-4">
+      <p class="h6 bg-dark p-2 rounded-3 text-white">Helpline for Covid19 : 9607432233</p>
+  </div>
+  <div class="col-md-4">
+      <p class="h6 bg-dark p-2 rounded-3 text-white"> Covid19 Information center : 0253-2317292</p>
+    </div>
+    <div class="col-md-4">
+    <p class="h6 bg-dark p-2 rounded-3 text-white"> Complaints on billing : 8805520395</p>
+    </div>
+</div>
+
+<div class="row">
+  <div class="col-md-3">
+
+  </div>
+  <div class="col-md-3">
+         <p class="h6 bg-dark p-2 rounded-3 text-white"> NMC Helpline : 7030300300</p>
+    </div>
+    <div class="col-md-3">
+        <p class="h6 bg-dark p-2 rounded-3 text-white"> CBRS Cell : 9607623366</p>
+    </div>
+    <div class="col-md-3">
+    
+    </div>
+</div>
+
+ 
+
+</div>
+
+  
+
+
+
+
+
+<div class="card container text-center mt-4">
+  <div class="card-body">
+<p class="h2">India</p>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <Label>Active Cases : </Label><span id="activeCases"> </span>
+        </div>
+        <div class="col-sm-6">
+            <Label>Deaths :</Label><span id="deaths"></span>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <Label>Recovered :</Label><span id="recovered"></span>
+        </div>
+        <div class="col-sm-6">
+            <Label>Total Cases :</Label><span id="totalCases"></span>
+        </div>
+    </div>
+
+    
+   
+  </div>
+</div>
+
+<h3 class="text-center mt-3 mb-3">Statewise data:</h3>
+<div class="statewise_table">
+  <center>
+    <table id="statewise_data" class="container   table-bordered" style="margin-bottom: 2vh;">
+        <thead class="text-center" style="background-color: #BA73CA;">
+        <th style="color:#fff">Sr. no</th>
+        <th style="color:#fff">State</th>
+        <th style="color:#fff">Total Infected</th>
+        <th style="color:#fff">Recovered</th>
+        <th style="color:#fff">Deaths</th>
+        </thead>
+    
+    </table>
+    </center>
+    
+</div>
+
+</main>
+<footer class="w-100 container-fluid text-center  ">
+  <p class="mb-0 text-decoration-underline font-italic font-weight-bold">Give Your feedback On or For Help Click On</p>
+  <div class="social_media">
+    <a href="https://www.instagram.com/askncapture/" target="_blank"> <img src="images/insta.png "  style="height:35px "></a>
+    <a href="https://www.facebook.com/aniket.kote.353" target="_blank"><img src=" images/fb.png "  style="height:32px; "></a>
+    <a href="https://twitter.com/AniketKote2" target="_blank"> <img src="images/twitter.png " style="height:33px " ></a>
+    <a href="https://wa.me/qr/PJPWDHSOITPYJ1" target="_blank"> <img src="images/whatsapp.png "  style="height:33px "></a>
+    <a href="https://mail.google.com/mail/u/2/#inbox?compose=CllgCJfnbcsfkvwbwFBBfWhJnJcJcVnBCwtpBBgVdtSjjsfJSNsPsRmMQfMsBRvTvhnGQwckLdV" target="_blank"><img src="images/gmail.png "  style="height:35px "></a>
+
+  </div>
+    
+  <p class="font-weight-bolder">Developed and Designed by <br> Aniket Kote and Sagar Chaudhari
+</p>
+</footer>
+
+   
+</body>
+</html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+
+<script>
+
+
+
+</script>
